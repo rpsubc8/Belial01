@@ -1,8 +1,10 @@
 # Belial01
 Este proyecto pretende continuar con el legado de la Diskmag multiplataforma Exilium, bajo un ATMEGA328 (arduinocade).<br>
-Para poder acercar la plataforma al máximo número de personas, se realizará un primer diseño bajo un arduino uno sin necesidad de cambiar el cristal de 16 Mhz, así como la mayor compatibilidad de pines y hardware del arduinocade.<br>
+Lo primero que necesitamos es una plataforma hardware, que en este caso, será el arduinocade.<br>
+Para poder acercar la plataforma al máximo número de personas, se realizará un primer diseño bajo una placa de ARDUINO UNO sin necesidad de cambiar el cristal de 16 Mhz, así como la mayor compatibilidad de pines y hardware del arduinocade.<br>
 <ul>
  <li><a href='#hardware'>Hardware<a/></li>
+ <li><a href='#video'>Video<a/></li>
  <li><a href='#mixer'>Mezclador audio<a/></li>
  <li><a href='#joystick'>Test joystick<a/></li>
  <li><a href='#jukebox'>Jukebox<a/></li> 
@@ -12,6 +14,27 @@ Para poder acercar la plataforma al máximo número de personas, se realizará u
 
 <br><br>
 <a name="hardware"><h2>Hardware</h2></a>
+Se utilizará una placa ARDUINO UNO, dotada de ATMEGA328, así que también valdría DUEMILANOVE o NANO, respetando la localización de los pines.<br>
+Se hará uso de los mismos pines del arduinocade:
+<ul>
+ <li>Video - D1 y 9</li>
+ <li>Audio - D6</li>
+</ul>
+Se dejarán libres para futuro los pines específicos del arduino:
+<ul>
+ <li>A4,A5 - I2C para conectar EEPROM LC256</li>
+ <li>13,12,11- Programador ISP  
+ <li>D2 y D3 - Teclado PS/2</li>
+</ul>, y pin de interrupción de teclado PS/2.
+<br><br>
+
+<a name="video"><h2>Video</h2></a>
+Se utiliza el modo SPI para generar video, similar al arduinocade, pero con la diferencia, de seguir con el mismo cristal de 16 Mhz del arduino, de forma que se genera una señal:
+<ul>
+ <li>NTSC blanco y negro</li>
+ <li>320x200 pixels</li>
+ <li>Tiles 40x25</li> 
+</ul>
 <br><br>
 
 <a name="mixer"><h2>Mezclador audio</h2></a>
