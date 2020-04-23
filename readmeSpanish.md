@@ -54,6 +54,14 @@ Se utiliza el modo SPI para generar video, similar al arduinocade, pero con la d
 
 <a name="jukebox"><h2>Jukebox</h2></a>
 <center><img src="preview/previewJukeboxDisk.gif"></center>
+Los tonos que se generan son de monotono cuadrados, pero de 2 tipos:
+<ul>
+ <li>Con sincronismo NTSC de 63.55 microsegundos</li>
+ <li>Normales sin interrupción de sincronismo de video</li>
+</ul>
+En el primer caso, se generan unos tonos múltiplos del sincronismo horizontal de video, de forma que no se deja de dibujar en pantalla, pero la onda no es pura. Debemos pues en la parte HTML5, tener quitado el checkbox DTMF, es decir, escucharemos tonos monotono, y debemos tener activa la casilla NTSC.<br>
+Para el segundo caso, se dejará de dibujar en pantalla cada vez que se genere sonido, pero se generará una onda más pura. Debemos en la parte HTML5 tener quitado el checkbox DTMF y el NTSC.
+<center><img src="preview/previewJukeboxNTSC.gif"></center>
 <br><br>
 
 <a name="html5"><h2>HTML5</h2></a>
