@@ -54,7 +54,7 @@ Se utiliza el modo SPI para generar video, similar al arduinocade, pero con la d
 <a name="html5"><h2>HTML5</h2></a>
 He creado varias herramientas:
 <ul>
- <li>Conversor de imágenes a Tiles (eliminación de repetidos)<li>
+ <li>Conversor de imágenes a Tiles (eliminación de repetidos)</li>
  <li>Simulador visual 40x25 de todo el mapa de memoria del arduinocade en HTML5</li>
  <li>Simulación de Joystick en HTML5</li>
  <li>Simulación de sonido en HTML5</li>
