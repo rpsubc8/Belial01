@@ -25,13 +25,15 @@ Se dejarán libres para futuro los pines específicos del arduino:
  <li>A4,A5 - I2C para conectar EEPROM LC256</li>
  <li>13,12,11- Programador ISP  
  <li>D2 y D3 - Teclado PS/2</li>
-</ul>, y pin de interrupción de teclado PS/2.
+</ul>
+Hemos quitado los pines y el módulo de infrarojos del arduinocade, pero a cambio usaremos mandos de norma ATARI, AMSTRAD CPC y mandos de NES.
 <br><br>
 
 <a name="video"><h2>Video</h2></a>
 Se utiliza el modo SPI para generar video, similar al arduinocade, pero con la diferencia, de seguir con el mismo cristal de 16 Mhz del arduino, de forma que se genera una señal:
 <ul>
  <li>NTSC blanco y negro</li>
+ <li>Hsync 63.55 microsegundos</li>
  <li>320x200 pixels</li>
  <li>Tiles 40x25</li> 
 </ul>
@@ -50,6 +52,14 @@ Se utiliza el modo SPI para generar video, similar al arduinocade, pero con la d
 <br><br>
 
 <a name="html5"><h2>HTML5</h2></a>
+He creado varias herramientas:
+<ul>
+ <li>Conversor de imágenes a Tiles (eliminación de repetidos)<li>
+ <li>Simulador visual 40x25 de todo el mapa de memoria del arduinocade en HTML5</li>
+ <li>Simulación de Joystick en HTML5</li>
+ <li>Simulación de sonido en HTML5</li>
+</ul>
+De esta forma, se puede ver e interactuar, tal y como si se dispusiera de un arduinocade, pero desde el navegador. Lamentablemente, todo el código que utilizo es de uso propio, por lo que no es cómodo al usuario final, y no lo he subido al repositorio.
 <br><br>
 
 <a name="box"><h2>Consola</h2></a>
