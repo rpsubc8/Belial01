@@ -7,6 +7,7 @@ Para poder acercar la plataforma al máximo número de personas, se realizará u
  <li><a href='#joystick'>Test joystick<a/></li>
  <li><a href='#jukebox'>Jukebox<a/></li> 
  <li><a href='#html5'>HTML5<a/></li>
+ <li><a href='#box'>Consola<a/></li>
 </ul>
 
 <br><br>
@@ -18,7 +19,7 @@ Para poder acercar la plataforma al máximo número de personas, se realizará u
 <br><br>
 
 <a name="joystick"><h2>Test joystick</h2></a>
-<center><img src="preview/previewBoxJoystickDB9.jpg"></center>
+<center><img src="preview/previewPadTV.gif"></center>
 <br><br>
 
 <a name="jukebox"><h2>Jukebox</h2></a>
@@ -28,8 +29,8 @@ Para poder acercar la plataforma al máximo número de personas, se realizará u
 <a name="html5"><h2>HTML5</h2></a>
 <br><br>
 
-
-<center><img src="preview/previewPadTV.gif"></center>
-
+<a name="box"><h2>Consola</h2></a>
+<center><img src="preview/previewBoxJoystickDB9.jpg"></center>
 <center><img src="preview/boxArduinocade.jpg"></center>
 <center><img src="preview/boxArduinocade2.jpg"></center>
+<br><br>
