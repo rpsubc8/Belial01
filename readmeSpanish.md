@@ -24,7 +24,12 @@ Se dejarán libres para futuro los pines específicos del arduino:
 <ul>
  <li>A4,A5 - I2C para conectar EEPROM LC256</li>
  <li>13,12,11- Programador ISP  
- <li>D2 y D3 - Teclado PS/2</li>
+ <li>D2 y D3 - Teclado PS/2</li> 
+</ul>
+Para el joystick usaremos:
+<ul>
+ <li>ATARI - Pines A0,A1,A2,A3,D4 y D5</li>
+ <li>NES - Pines A0,A1,A2</li>
 </ul>
 Hemos quitado los pines y el módulo de infrarojos del arduinocade, pero a cambio usaremos mandos de norma ATARI, AMSTRAD CPC y mandos de NES.
 <br><br>
