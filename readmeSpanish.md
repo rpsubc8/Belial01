@@ -1,12 +1,12 @@
 # Belial01
-Este proyecto pretende continuar con el legado de la Diskmag multiplataforma Exilium, bajo un ATMEGA328 (arduinocade).<br>
+Este proyecto pretende continuar con el legado de la Diskmag multiplataforma Exilium, bajo un ATMEGA328 (arduinocade), con el nombre de Belial.<br>
 Lo primero que necesitamos es una plataforma hardware, que en este caso, será el arduinocade.<br>
 Para poder acercar la plataforma al máximo número de personas, se realizará un primer diseño bajo una placa de ARDUINO UNO sin necesidad de cambiar el cristal de 16 Mhz, así como la mayor compatibilidad de pines y hardware del arduinocade.<br>
 <ul>
  <li><a href='#hardware'>Hardware<a/></li>
  <li><a href='#video'>Video<a/></li>
  <li><a href='#mixer'>Mezclador audio<a/></li>
- <li><a href='#joystick'>Test joystick<a/></li>
+ <li><a href='#joystick'>Test joystick ATARI<a/></li>
  <li><a href='#jukebox'>Jukebox<a/></li> 
  <li><a href='#html5'>HTML5<a/></li>
  <li><a href='#box'>Consola<a/></li>
@@ -14,7 +14,7 @@ Para poder acercar la plataforma al máximo número de personas, se realizará u
 
 <br><br>
 <a name="hardware"><h2>Hardware</h2></a>
-Se utilizará una placa ARDUINO UNO, dotada de ATMEGA328, así que también valdría DUEMILANOVE o NANO, respetando la localización de los pines.<br>
+Se utiliza una placa ARDUINO UNO, dotada de ATMEGA328, así que también valdría DUEMILANOVE o NANO, respetando la localización de los pines.<br>
 Se hará uso de los mismos pines del arduinocade:
 <ul>
  <li>Video - D1 y 9</li>
@@ -28,15 +28,16 @@ Se dejarán libres para futuro los pines específicos del arduino:
 </ul>
 Para el joystick usaremos:
 <ul>
- <li>ATARI - Pines A0,A1,A2,A3,D4 y D5</li>
- <li>NES - Pines A0,A1,A2</li>
+ <li>ATARI - A0,A1,A2,A3,D4 y D5</li>
+ <li>NES - A0,A1,A2</li>
 </ul>
-Hemos quitado los pines y el módulo de infrarojos del arduinocade, pero a cambio usaremos mandos de norma ATARI, AMSTRAD CPC y mandos de NES.
+Se ha quitado los pines y el módulo de infrarojos del arduinocade, pero a cambio usaremos mandos de norma ATARI, AMSTRAD CPC y mandos de NES.
 <br><br>
 
 <a name="video"><h2>Video</h2></a>
 Se utiliza el modo SPI para generar video, similar al arduinocade, pero con la diferencia, de seguir con el mismo cristal de 16 Mhz del arduino, de forma que se genera una señal:
 <ul>
+ <li>CVBS RCA<li>
  <li>NTSC blanco y negro</li>
  <li>Hsync 63.55 microsegundos</li>
  <li>320x200 pixels</li>
@@ -45,12 +46,35 @@ Se utiliza el modo SPI para generar video, similar al arduinocade, pero con la d
 <br><br>
 
 <a name="mixer"><h2>Mezclador audio</h2></a>
+El audio de arduinocade se caracteriza por:
+<ul>
+ <li>PWM - pin D6</li>
+ <li>Salida mono</li>
+ <li>4 canales</li>
+ <li>Potenciómetro de 100 K Logaritmo - pin D6 control de volumen</li>
+</ul>
+He decidido seguir usando el pin 6 de audio.<br>
+También he añadido un mezclador de audio pasivo simple, de manera que podemos mezclar la salida del arduinocade MONO con una entrada de audio estereo. Para ello debe usarse resistencias de 1 K para cada entrada:
 <center><img src="preview/previewMixerAudio.gif"></center>
 <br><br>
 
-<a name="joystick"><h2>Test joystick</h2></a>
+<a name="joystick"><h2>Test joystick ATARI</h2></a>
+He creado un programa de Test de joystick ATARI para Arduino:
+<a href="https://github.com/rpsubc8/Belial01/tree/master/arduino/joystickTestDB9">joystickTestDB9</a>
 <center><img src="preview/previewPadTV.gif"></center>
+Se usa la norma de ATARI y AMSTRAD CPC de masa común, PULLUP, y los pines a usar en ARDUINO son:
+<ul>
+ <li>Arriba - 14</li>
+ <li>Abajo - 15</li>
+ <li>Izquierda - 16</li>
+ <li>Derecha - 17</li>
+ <li>A - 4</li>
+ <li>B - 5</li>
+</ul>
+La representación del conector DB9 es la siguiente:
+<center><img src="preview/previewDB9pinout.jpg"></center>
 <br><br>
+
 
 <a name="jukebox"><h2>Jukebox</h2></a>
 <center><img src="preview/previewJukeboxDisk.gif"></center>
