@@ -70,7 +70,8 @@ Thanks to this mixer, we can play background music from external audio devices, 
 <br><br>
 <a name="joystick"><h2>Test ATARI joystick></h2></a>
 I have created an ATARI joystick test program for Arduino, which allows us to test the button presses:
-<center><a href="https://github.com/rpsubc8/Belial01/tree/master/arduino/joystickTestDB9">joystickTestDB9</a></center>
+<center><a href="https://github.com/rpsubc8/Belial01/tree/master/arduino/joystickTestDB9">joystickTestDB9</a></center><br>
+<center><a href="https://rpsubc8.github.io/jukeboxDTMF/html5/jukeboxdtmf.html">JUKEBOX DTMF (online)</a></center><br>
 <center><img src="preview/previewPadTV.gif"></center>
 The standard of ATARI and AMSTRAD CPC of common mass, PULLUP, is used and the pins to be used in ARDUINO are
 <ul>
