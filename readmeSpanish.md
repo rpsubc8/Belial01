@@ -55,11 +55,12 @@ El audio de arduinocade se caracteriza por:
  <li>4 canales</li>
  <li>Resistencia 100 K</li> 
 </ul>
-He decidido seguir usando el pin 6 de audio para compatibilidad, pero he sustituido la resistencia dija de 100 K por un pontenciómetro Logaritmico de 100 K, que permite regular el volumen.<br>
+He decidido seguir usando el pin 6 de audio para compatibilidad, pero he sustituido la resistencia fija de 100 K por un pontenciómetro Logaritmico de 100 K, que permite regular el volumen.<br>
 <center><img src="preview/previewSoundPotenciometer.jpg"></center>
 
 También he añadido un mezclador de audio pasivo simple, de manera que podemos mezclar la salida del arduinocade MONO con una entrada de audio estereo. Para ello debe usarse resistencias de 1 K para cada entrada:
 <center><img src="preview/previewMixerAudio.gif"></center>
+Gracias a este mezclador, podremos poner música de fondo de dispositivos de audio externos, mientras suena la música del arduinocade.
 <br><br>
 
 <a name="joystick"><h2>Test joystick ATARI</h2></a>
@@ -68,15 +69,17 @@ He creado un programa de Test de joystick ATARI para Arduino:
 <center><img src="preview/previewPadTV.gif"></center>
 Se usa la norma de ATARI y AMSTRAD CPC de masa común, PULLUP, y los pines a usar en ARDUINO son:
 <ul>
- <li>Arriba - 14</li>
- <li>Abajo - 15</li>
- <li>Izquierda - 16</li>
- <li>Derecha - 17</li>
+ <li>Arriba - 14 (A0)</li>
+ <li>Abajo - 15 (A1)</li>
+ <li>Izquierda - 16 (A2)</li>
+ <li>Derecha - 17 (A3)</li>
  <li>A - 4</li>
  <li>B - 5</li>
 </ul>
 La representación del conector DB9 es la siguiente:
 <center><img src="preview/previewDB9pinout.jpg"></center>
+El circuito es muy simple:
+<center><img src="preview/previewJoystickAtariCircuit.jpg"></center>
 <br><br>
 
 
