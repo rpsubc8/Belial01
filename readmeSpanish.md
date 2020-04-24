@@ -23,7 +23,7 @@ Se hará uso de los mismos pines del arduinocade:
 Se dejarán libres para futuro los pines específicos del arduino:
 <ul>
  <li>A4,A5 - I2C para conectar EEPROM LC256</li>
- <li>13,12,11- Programador ISP  
+ <li>13,12,11- Programador ISP</li>
  <li>D2 y D3 - Teclado PS/2</li> 
 </ul>
 Para el joystick usaremos:
@@ -37,7 +37,7 @@ Se ha quitado los pines y el módulo de infrarojos del arduinocade, pero a cambi
 <a name="video"><h2>Video</h2></a>
 Se utiliza el modo SPI para generar video, similar al arduinocade, pero con la diferencia, de seguir con el mismo cristal de 16 Mhz del arduino, de forma que se genera una señal:
 <ul>
- <li>CVBS RCA<li>
+ <li>CVBS RCA</li>
  <li>NTSC blanco y negro</li>
  <li>Hsync 63.55 microsegundos</li>
  <li>320x200 pixels</li>
@@ -51,9 +51,10 @@ El audio de arduinocade se caracteriza por:
  <li>PWM - pin D6</li>
  <li>Salida mono</li>
  <li>4 canales</li>
- <li>Potenciómetro de 100 K Logaritmo - pin D6 control de volumen</li>
+ <li>Resistencia 100 K</li> 
 </ul>
-He decidido seguir usando el pin 6 de audio.<br>
+He decidido seguir usando el pin 6 de audio para compatibilidad, pero he sustituido la resistencia dija de 100 K por un pontenciómetro Logaritmico de 100 K, que permite regular el volumen.<br>
+
 También he añadido un mezclador de audio pasivo simple, de manera que podemos mezclar la salida del arduinocade MONO con una entrada de audio estereo. Para ello debe usarse resistencias de 1 K para cada entrada:
 <center><img src="preview/previewMixerAudio.gif"></center>
 <br><br>
