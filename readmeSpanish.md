@@ -64,7 +64,7 @@ Gracias a este mezclador, podremos poner música de fondo de dispositivos de aud
 <br><br>
 
 <a name="joystick"><h2>Test joystick ATARI</h2></a>
-He creado un programa de Test de joystick ATARI para Arduino:
+He creado un programa de Test de joystick ATARI para Arduino, que nos permite testear la pulsación de los botones:
 <center><a href="https://github.com/rpsubc8/Belial01/tree/master/arduino/joystickTestDB9">joystickTestDB9</a></center>
 <center><img src="preview/previewPadTV.gif"></center>
 Se usa la norma de ATARI y AMSTRAD CPC de masa común, PULLUP, y los pines a usar en ARDUINO son:
