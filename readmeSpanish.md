@@ -126,6 +126,17 @@ Los comandos que se envian como nonotono son:
  <li>#17* - + Volumen</li> 
  <li>#1D* - - Volumen</li> 
 </ul>
+La conversión de tono a Hz:
+<ul>
+ <li>0 - 1336 Hz</li>
+ <li>1 - 697 Hz</li>
+ <li>4 - 770 Hz</li>
+ <li>7 - 852 Hz</li>
+ <li>D - 1633 Hz</li>
+ <li># - 561,98718669215 Hz</li>
+ <li>* - 393,3910306845 Hz</li>
+ <li>2 - 302,60848514192 Hz</li>
+</ul>
 Desde la aplicación en Arduino, podemos usar los botones del mando:
 <ul>
  <li>Arriba - Subir volumen</li>
