@@ -1,6 +1,6 @@
 # Belial01
 Este proyecto pretende continuar con el legado de la Diskmag multiplataforma Exilium, bajo un ATMEGA328 (arduinocade), con el nombre de Belial.<br>
-Pero poder ver la diskmag, primero necesitamos una plataforma hardware, que en este caso, será el arduinocade.<br>
+Primero necesitamos una plataforma hardware, que en este caso, será el arduinocade.<br>
 Para poder acercar la plataforma al máximo número de personas, se realizará un primer diseño bajo una placa de ARDUINO UNO sin necesidad de cambiar el cristal de 16 Mhz, así como la mayor compatibilidad de pines y hardware del arduinocade.<br>
 <ul>
  <li><a href='#hardware'>Hardware<a/></li>
