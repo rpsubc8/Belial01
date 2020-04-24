@@ -3,6 +3,7 @@ Este proyecto pretende continuar con el legado de la Diskmag multiplataforma Exi
 Primero necesitamos una plataforma hardware, que en este caso, será el arduinocade (Peter Barrett).<br>
 Para poder acercar la plataforma al máximo número de personas, se realizará un primer diseño bajo una placa de ARDUINO UNO sin necesidad de cambiar el cristal de 16 Mhz (sacrificando el color), así como la mayor compatibilidad de pines y hardware del arduinocade.<br>
 <ul>
+ <li><a href='#arduinoide'>IDE Arduino<a/></li>
  <li><a href='#hardware'>Hardware<a/></li>
  <li><a href='#video'>Video<a/></li>
  <li><a href='#mixer'>Mezclador audio<a/></li>
@@ -11,6 +12,11 @@ Para poder acercar la plataforma al máximo número de personas, se realizará u
  <li><a href='#html5'>HTML5<a/></li>
  <li><a href='#box'>Consola<a/></li>
 </ul>
+
+<br><br>
+<a name="arduinoide"><h2>IDE Arduino</h2></a>
+Se han realizado pruebas con el IDE 1.8.11.
+<br><br>
 
 <br><br>
 <a name="hardware"><h2>Hardware</h2></a>
@@ -143,6 +149,10 @@ De esta forma, se puede ver e interactuar, tal y como si se dispusiera de un ard
 <br><br>
 
 <a name="box"><h2>Consola</h2></a>
+La captura del test del joystick en el arduino:
+<center><img src="preview/previewTVjoystick.jpg"></center>
+La captura del Jukebox en el arduino:
+<center><img src="preview/previewTVdiscoJukebox.jpg"></center>
 Se puede meter en una simple caja de madera o de plástico.
 <center><img src="preview/previewBoxJoystickDB9.jpg"></center>
 <center><img src="preview/boxArduinocade.jpg"></center>
