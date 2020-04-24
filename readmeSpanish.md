@@ -88,10 +88,11 @@ El circuito es muy simple:
 Disponemos de:
 <ul>
  <li>Parte servidora (móvil u ordenador) en navegador web que recibe peticiones de comandos de sonido, via tonos de audio</li>
- <li>Arduinocade generando coamandos de control de canciones via sonido</li>
+ <li>Arduinocade generando comandos de control de canciones via sonido</li>
 </ul>
-Básicamente, el arduinocade envia tonos de audio a una aplicación web que los decodifica para en función del comando ejecutar una canción.<br>
-Los tonos que se generan son de monotono cuadrados, pero de 2 tipos:
+Básicamente, el arduinocade envia tonos de audio a una aplicación web que los decodifica, para en función del comando, ejecutar una canción.<br>
+<center><a href="https://github.com/rpsubc8/jukeboxDTMF">JUKEBOX DTMF</a></center>
+Los tonos que se generan son  monotono cuadrados, pero de 2 tipos:
 <ul>
  <li>Con sincronismo NTSC de 63.55 microsegundos</li>
  <li>Normales sin interrupción de sincronismo de video</li>
@@ -118,6 +119,16 @@ Los comandos que se envian como nonotono son:
  <li>#17* - + Volumen</li> 
  <li>#1D* - - Volumen</li> 
 </ul>
+Desde la aplicación en Arduino, podemos usar los botones del mando:
+<ul>
+ <li>Arriba - Subir volumen</li>
+ <li>Abajo - Bajar volumen</li>
+ <li>Izquierda - Canción anterior</li>
+ <li>Derecha - Canción siguiente</li>
+ <li>A - Play/Pause</li>
+ <li>B - Modo NTSC sin dejar de dibujar en pantalla, o sin interrupciones, dejando de dibujar</li>
+</ul>
+Para esta prueba, se ha usado un modo extra lento (500 ms tono, 500 ms silencio) y con 4 tonos de envio #xx*, pero modificando el código podemos poner el modo FAST con sólo 2 tonos y máxima velocidad. Debemos pues, también poner dichas opciones en la parte decodificador web.
 <br><br>
 
 <a name="html5"><h2>HTML5</h2></a>
@@ -128,10 +139,11 @@ He creado varias herramientas:
  <li>Simulación de Joystick en HTML5</li>
  <li>Simulación de sonido en HTML5</li>
 </ul>
-De esta forma, se puede ver e interactuar, tal y como si se dispusiera de un arduinocade, pero desde el navegador. Lamentablemente, todo el código que utilizo es de uso propio, por lo que no es cómodo al usuario final, y no lo he subido al repositorio.
+De esta forma, se puede ver e interactuar, tal y como si se dispusiera de un arduinocade, pero desde el navegador. Lamentablemente, todo el código js que utilizo es de uso propio, por lo que no es cómodo al usuario final, y no lo he subido al repositorio. El código de Arduino si esta subido.
 <br><br>
 
 <a name="box"><h2>Consola</h2></a>
+Se puede meter en una simple caja de madera o de plástico.
 <center><img src="preview/previewBoxJoystickDB9.jpg"></center>
 <center><img src="preview/boxArduinocade.jpg"></center>
 <center><img src="preview/boxArduinocade2.jpg"></center>
