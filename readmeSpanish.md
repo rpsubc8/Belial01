@@ -97,7 +97,8 @@ Disponemos de:
  <li>Arduinocade generando comandos de control de canciones via sonido</li>
 </ul>
 Básicamente, el arduinocade envia tonos de audio a una aplicación web que los decodifica, para en función del comando, ejecutar una canción.<br>
-<center><a href="https://github.com/rpsubc8/jukeboxDTMF">JUKEBOX DTMF</a></center><br>
+<center><a href="https://github.com/rpsubc8/jukeboxDTMF">JUKEBOX DTMF (github)</a></center><br>
+<center><a href="https://rpsubc8.github.io/jukeboxDTMF/html5/jukeboxdtmf.html">JUKEBOX DTMF (online)</a></center><br>
 Los tonos que se generan son  monotono cuadrados, pero de 2 tipos:
 <ul>
  <li>Con sincronismo NTSC de 63.55 microsegundos</li>
