@@ -118,9 +118,9 @@ The commands that are sent as nonotone are:
  <li>#12* - Track 8</li> 
  <li>#14* - Track 9</li> 
  <li>#24* - Track 10</li> 
- <li>20* - Next Track</li> 
- <li>21* - Last Track</li> 
- <li>22* - Play/Pause</li>
+ <li>#20* - Next Track</li> 
+ <li>#21* - Last Track</li> 
+ <li>#22* - Play/Pause</li>
  <li>#17* - + Volume</li> 
  <li>#1D* - - Volume</li> 
 </ul>
