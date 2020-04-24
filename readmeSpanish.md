@@ -34,7 +34,7 @@ Se ha quitado los pines y el módulo de infrarojos del arduinocade, pero a cambi
 <br><br>
 
 <a name="video"><h2>Video</h2></a>
-Se utiliza el modo SPI para generar video, similar al arduinocade, pero con la diferencia, de seguir con el mismo cristal de 16 Mhz del arduino, de forma que se genera una señal:
+Se utiliza el modo SPI (Dave Schmenk) para generar video, similar al arduinocade, pero con la diferencia, de seguir con el mismo cristal de 16 Mhz del arduino, de forma que se genera una señal:
 <ul>
  <li>CVBS RCA</li>
  <li>NTSC blanco y negro</li>
@@ -85,6 +85,12 @@ El circuito es muy simple:
 
 <a name="jukebox"><h2>Jukebox</h2></a>
 <center><img src="preview/previewJukeboxDisk.gif"></center>
+Disponemos de:
+<ul>
+ <li>Parte servidora (móvil u ordenador) en navegador web que recibe peticiones de comandos de sonido, via tonos de audio</li>
+ <li>Arduinocade generando coamandos de control de canciones via sonido</li>
+</ul>
+Básicamente, el arduinocade envia tonos de audio a una aplicación web que los decodifica para en función del comando ejecutar una canción.<br>
 Los tonos que se generan son de monotono cuadrados, pero de 2 tipos:
 <ul>
  <li>Con sincronismo NTSC de 63.55 microsegundos</li>
@@ -93,6 +99,23 @@ Los tonos que se generan son de monotono cuadrados, pero de 2 tipos:
 En el primer caso, se generan unos tonos múltiplos del sincronismo horizontal de video, de forma que no se deja de dibujar en pantalla, pero la onda no es pura. Debemos pues en la parte HTML5, tener quitado el checkbox DTMF, es decir, escucharemos tonos monotono, y debemos tener activa la casilla NTSC.<br>
 Para el segundo caso, se dejará de dibujar en pantalla cada vez que se genere sonido, pero se generará una onda más pura. Debemos en la parte HTML5 tener quitado el checkbox DTMF y el NTSC.
 <center><img src="preview/previewJukeboxNTSC.gif"></center>
+Los comandos que se envian como nonotono son:
+<ul>
+ <li>#00* - Track 0</li>
+ <li>#01* - Track 1</li>
+ <li>#02* - Track 2</li>
+ <li>#04* - Track 3</li>
+ <li>#07* - Track 4</li>
+ <li>#0D* - Track 5</li>
+ <li>#10* - Track 6</li> 
+ <li>#11* - Track 7</li> 
+ <li>#12* - Track 8</li> 
+ <li>#14* - Track 9</li> 
+ <li>#24* - Track 10</li> 
+ <li></li> 
+ <li></li> 
+ <li></li> 
+</ul>
 <br><br>
 
 <a name="html5"><h2>HTML5</h2></a>
