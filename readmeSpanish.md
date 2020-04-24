@@ -54,6 +54,7 @@ El audio de arduinocade se caracteriza por:
  <li>Resistencia 100 K</li> 
 </ul>
 He decidido seguir usando el pin 6 de audio para compatibilidad, pero he sustituido la resistencia dija de 100 K por un pontenciómetro Logaritmico de 100 K, que permite regular el volumen.<br>
+<center><img src="preview/previewSoundPotenciometer.jpg"></center>
 
 También he añadido un mezclador de audio pasivo simple, de manera que podemos mezclar la salida del arduinocade MONO con una entrada de audio estereo. Para ello debe usarse resistencias de 1 K para cada entrada:
 <center><img src="preview/previewMixerAudio.gif"></center>
