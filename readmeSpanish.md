@@ -1,6 +1,6 @@
 # Belial01
 Este proyecto pretende continuar con el legado de la Diskmag multiplataforma Exilium, bajo un ATMEGA328 (arduinocade), con el nombre de Belial.<br>
-Lo primero que necesitamos es una plataforma hardware, que en este caso, será el arduinocade.<br>
+Pero poder ver la diskmag, primero necesitamos una plataforma hardware, que en este caso, será el arduinocade.<br>
 Para poder acercar la plataforma al máximo número de personas, se realizará un primer diseño bajo una placa de ARDUINO UNO sin necesidad de cambiar el cristal de 16 Mhz, así como la mayor compatibilidad de pines y hardware del arduinocade.<br>
 <ul>
  <li><a href='#hardware'>Hardware<a/></li>
@@ -28,10 +28,9 @@ Se dejarán libres para futuro los pines específicos del arduino:
 </ul>
 Para el joystick usaremos:
 <ul>
- <li>ATARI - A0,A1,A2,A3,D4 y D5</li>
- <li>NES - A0,A1,A2</li>
+ <li>ATARI - A0,A1,A2,A3,D4 y D5</li> 
 </ul>
-Se ha quitado los pines y el módulo de infrarojos del arduinocade, pero a cambio usaremos mandos de norma ATARI, AMSTRAD CPC y mandos de NES.
+Se ha quitado los pines y el módulo de infrarojos del arduinocade, pero a cambio usaremos mandos de norma ATARI y AMSTRAD CPC.
 <br><br>
 
 <a name="video"><h2>Video</h2></a>
@@ -41,8 +40,11 @@ Se utiliza el modo SPI para generar video, similar al arduinocade, pero con la d
  <li>NTSC blanco y negro</li>
  <li>Hsync 63.55 microsegundos</li>
  <li>320x200 pixels</li>
- <li>Tiles 40x25</li> 
+ <li>Tiles 40x25</li>
+ <li>DAC simple resistencia 1 K y 470 ohmios</li>
 </ul>
+El circuito a realizar es el siguiente:
+<center><img src="preview/previewVideoCircuit.jpg"></center>
 <br><br>
 
 <a name="mixer"><h2>Mezclador audio</h2></a>
