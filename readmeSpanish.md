@@ -137,7 +137,7 @@ La conversión de tono a Hz con NTSC (sacando video):
  <li>* - 393,3910306845 Hz</li>
  <li>2 - 302,60848514192 Hz</li>
 </ul>
-La conversión de tono a Hz sin NTSC (sin sar video):
+La conversión de tono a Hz sin NTSC (sin sacar video):
 <ul>
  <li>0 - 1336 Hz</li>
  <li>1 - 697 Hz</li>
