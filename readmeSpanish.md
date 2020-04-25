@@ -126,7 +126,7 @@ Los comandos que se envian como nonotono son:
  <li>#17* - + Volumen</li> 
  <li>#1D* - - Volumen</li> 
 </ul>
-La conversión de tono a Hz:
+La conversión de tono a Hz con NTSC (sacando video):
 <ul>
  <li>0 - 1336 Hz</li>
  <li>1 - 697 Hz</li>
@@ -136,6 +136,17 @@ La conversión de tono a Hz:
  <li># - 561,98718669215 Hz</li>
  <li>* - 393,3910306845 Hz</li>
  <li>2 - 302,60848514192 Hz</li>
+</ul>
+La conversión de tono a Hz sin NTSC (sin sar video):
+<ul>
+ <li>0 - 1336 Hz</li>
+ <li>1 - 697 Hz</li>
+ <li>4 - 770 Hz</li>
+ <li>7 - 852 Hz</li>
+ <li>D - 1633 Hz</li>
+ <li># - 1477 Hz</li>
+ <li>* - 941 Hz</li>
+ <li>2 - 1209 Hz</li>
 </ul>
 Desde la aplicación en Arduino, podemos usar los botones del mando:
 <ul>
