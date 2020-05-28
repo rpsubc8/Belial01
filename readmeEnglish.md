@@ -3,14 +3,14 @@ This project aims to continue the legacy of the multiplatform Diskmag Exilium (B
 First we need a hardware platform, which in this case, will be the arduinocade (Peter Barrett).<br>
 In order to bring the platform closer to the maximum number of people, a first design will be made under an ARDUINO ONE board without the need to change the 16 Mhz glass (sacrificing color), as well as the greater compatibility of pins and hardware of the arduinocade.<br>
 <ul>
- <li><a href='#arduinoide'>IDE Arduino<a/></li>
- <li><a href='#hardware'>Hardware<a/></li>
- <li><a href='#video'>Video<a/></li>
- <li><a href='#mixer'>Audio mixer<a/></li>
- <li><a href='#joystick'>Test joystick ATARI<a/></li>
- <li><a href='#jukebox'>Jukebox<a/></li> 
- <li><a href='#html5'>HTML5<a/></li>
- <li><a href='#box'>Console<a/></li>
+ <li><a href='#arduinoide'>IDE Arduino</a></li>
+ <li><a href='#hardware'>Hardware</a></li>
+ <li><a href='#video'>Video</a></li>
+ <li><a href='#mixer'>Audio mixer</a></li>
+ <li><a href='#joystick'>Test joystick ATARI</a></li>
+ <li><a href='#jukebox'>Jukebox</a></li> 
+ <li><a href='#html5'>HTML5</a></li>
+ <li><a href='#box'>Console</a></li>
 </ul>
 
 <br><br>
