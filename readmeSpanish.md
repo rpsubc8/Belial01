@@ -3,14 +3,14 @@ Este proyecto pretende continuar con el legado de la Diskmag multiplataforma Exi
 Primero necesitamos una plataforma hardware, que en este caso, será el arduinocade (Peter Barrett).<br>
 Para poder acercar la plataforma al máximo número de personas, se realizará un primer diseño bajo una placa de ARDUINO UNO sin necesidad de cambiar el cristal de 16 Mhz (sacrificando el color), así como la mayor compatibilidad de pines y hardware del arduinocade.<br>
 <ul>
- <li><a href='#arduinoide'>IDE Arduino<a/></li>
- <li><a href='#hardware'>Hardware<a/></li>
- <li><a href='#video'>Video<a/></li>
- <li><a href='#mixer'>Mezclador audio<a/></li>
- <li><a href='#joystick'>Test joystick ATARI<a/></li>
- <li><a href='#jukebox'>Jukebox<a/></li> 
- <li><a href='#html5'>HTML5<a/></li>
- <li><a href='#box'>Consola<a/></li>
+ <li><a href='#arduinoide'>IDE Arduino</a></li>
+ <li><a href='#hardware'>Hardware</a></li>
+ <li><a href='#video'>Video</a></li>
+ <li><a href='#mixer'>Mezclador audio</a></li>
+ <li><a href='#joystick'>Test joystick ATARI</a></li>
+ <li><a href='#jukebox'>Jukebox</a></li> 
+ <li><a href='#html5'>HTML5</a></li>
+ <li><a href='#box'>Consola</a></li>
 </ul>
 
 <br><br>
